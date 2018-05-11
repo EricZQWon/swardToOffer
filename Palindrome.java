@@ -3,11 +3,16 @@ package Cracking_Coding_Interview;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 判断回文链表
+ */
 public class Palindrome {
 	List list = new ArrayList();
 	volatile int count = 0;
 	volatile boolean flag = true;
 
+	//递归 AC
+	//另一种思路，快慢双指针
 	public boolean isPalindrome(ListNode pHead) {
 		if (pHead == null)
 			return true;
