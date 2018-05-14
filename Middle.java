@@ -14,6 +14,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Middle {
 
+	//大顶堆放小数 小顶堆放大数
 	PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> o2 - o1);
 	PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 	int count = 0;
